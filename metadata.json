@@ -1,0 +1,5 @@
+{
+  "name": "Estimador de Equipe de Agência",
+  "description": "Uma ferramenta para estimar a equipe de agência necessária para atender um cliente com base na carga de trabalho e complexidade.",
+  "requestFramePermissions": []
+}
