@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom thin slider styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  height: 12px;
+}
+
+/* Webkit (Chrome, Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: #4a4a4a; /* a medium gray */
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px; /* Centers thumb on the track */
+  width: 12px;
+  height: 12px;
+  background: #f59e0b; /* yellow-500 */
+  border-radius: 50%;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: #4a4a4a;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #f59e0b;
+  border-radius: 50%;
+  border: none;
+}

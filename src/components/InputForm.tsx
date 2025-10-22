@@ -23,7 +23,7 @@ export const InputForm: React.FC<InputFormProps> = ({ data, onDataChange, onDepa
             id="totalJobs"
             value={data.totalJobs}
             onChange={(e) => onDataChange({ totalJobs: parseInt(e.target.value, 10) || 0 })}
-            className="w-full bg-black border border-gray-800 text-gray-200 rounded-md p-3 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500 transition"
+            className="w-full bg-black border border-gray-600 text-gray-200 rounded-md p-3 focus:ring-yellow-500 focus:border-yellow-500 transition"
             placeholder="Ex: 150"
           />
         </div>
@@ -35,7 +35,7 @@ export const InputForm: React.FC<InputFormProps> = ({ data, onDataChange, onDepa
             id="considerations"
             value={data.considerations || ''}
             onChange={(e) => onDataChange({ considerations: e.target.value })}
-            className="w-full bg-black border border-gray-800 text-gray-200 rounded-md p-3 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500 transition h-[46px] resize-none"
+            className="w-full bg-black border border-gray-600 text-gray-200 rounded-md p-3 focus:ring-yellow-500 focus:border-yellow-500 transition h-[46px] resize-none"
             placeholder="Ex: cliente com reuniões semanais, alta exigência criativa, etc."
             rows={1}
           />
