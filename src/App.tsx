@@ -54,15 +54,17 @@ const App: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Header />
         <main className="mt-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <InputForm
-              data={inputData}
-              onDataChange={handleDataChange}
-              onDepartmentChange={handleDepartmentChange}
-              onSubmit={handleSubmit}
-              isLoading={isLoading}
-            />
-            <div className="relative">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+            <div className="lg:col-span-3">
+              <InputForm
+                data={inputData}
+                onDataChange={handleDataChange}
+                onDepartmentChange={handleDepartmentChange}
+                onSubmit={handleSubmit}
+                isLoading={isLoading}
+              />
+            </div>
+            <div className="relative lg:col-span-2">
               {isLoading && <Loader />}
               {error && <p className="text-red-500 text-center">{error}</p>}
               {results && <ResultsDisplay results={results} />}

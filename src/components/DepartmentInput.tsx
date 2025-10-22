@@ -16,7 +16,7 @@ export const DepartmentInput: React.FC<DepartmentInputProps> = ({
   onComplexityChange,
 }) => {
   return (
-    <div className="border border-gray-600 p-4 rounded-lg h-full">
+    <div className="border border-gray-800 p-4 rounded-lg h-full">
       <h3 className="font-semibold text-gray-200">{departmentName}</h3>
       <div className="mt-4 space-y-4">
         <div>
